@@ -18,7 +18,7 @@ namespace Clase_23_de_mayo.Data
             connection = new MySqlConnection(connectionString);
         }
         public void Insertar(string nombre, string apellido, DateTime fechaNacimiento, string email, decimal saldo, bool activo)
-        {
+        { 
             try
             {
                 string query = "INSERT INTO Usuarios (Nombre, Apellido, FechaNacimiento, Email, Saldo, Activo) VALUES (@Nombre, @Apellido, @FechaNacimiento, @Email, @Saldo, @Activo)";
